@@ -1,2 +1,21 @@
 # Student Managment
- # C ile Öğrenci Yönetim Sistemi  Bu basit C programı, temel bir konsol tabanlı öğrenci yönetim sistemi oluşturur. Program, bir `struct` (yapı) kullanarak öğrenci bilgilerini (ad, soyad, okul numarası, CGPA ve ders kimlikleri) saklar. Kullanıcıya bir menü aracılığıyla öğrenci bilgilerini ekleme, silme, güncelleme ve arama gibi çeşitli işlemler yapma imkanı sunar.  ## Özellikler  - **Öğrenci Ekleme**: Yeni öğrenci detaylarını (isim, okul no, CGPA, ders kimlikleri) sisteme ekler. - **Arama Fonksiyonları**: Öğrencileri okul numarasına, isme veya ders kimliğine göre arayarak detaylarını gösterir. - **Güncelleme Fonksiyonu**: Belirli bir öğrencinin bilgilerini okul numarasına göre günceller. - **Silme Fonksiyonu**: Belirli bir öğrenciyi okul numarasına göre sistemden siler. - **Toplam Öğrenci Sayısı**: Sistemdeki toplam öğrenci sayısını ve eklenebilecek maksimum öğrenci sayısını gösterir. - **Menü Tabanlı Arayüz**: Kullanıcı, yapmak istediği işlemi kolayca seçebilir. - **Statik Dizi Kullanımı**: Öğrenci verileri, 50 öğrenci kapasiteli statik bir dizi içinde saklanır.  ## Kullanım  ### Derleme  Projeyi derlemek için bir C derleyicisine (örneğin GCC) ihtiyacınız vardır. Aşağıdaki komutu kullanarak derleme yapabilirsiniz:  ```bash gcc -o ogrenci_yonetimi student-managment.c
+ 
+ 
+ # C ile Öğrenci Yönetim Sistemi  Bu basit C programı, temel bir konsol tabanlı öğrenci yönetim sistemi oluşturur. Program, bir `struct` (yapı) kullanarak öğrenci bilgilerini (ad, soyad, okul numarası, CGPA ve ders kimlikleri) saklar. Kullanıcıya bir menü aracılığıyla öğrenci bilgilerini ekleme, silme, güncelleme ve arama gibi çeşitli işlemler yapma imkanı sunar.  
+ 
+
+ ## Özellikler  - 
+ 
+ **Öğrenci Ekleme**: Yeni öğrenci detaylarını (isim, okul no, CGPA, ders kimlikleri) sisteme ekler. - 
+ **Arama Fonksiyonları**: Öğrencileri okul numarasına, isme veya ders kimliğine göre arayarak detaylarını gösterir. - 
+ **Güncelleme Fonksiyonu**: Belirli bir öğrencinin bilgilerini okul numarasına göre günceller. - 
+ **Silme Fonksiyonu**: Belirli bir öğrenciyi okul numarasına göre sistemden siler. - 
+ **Toplam Öğrenci Sayısı**: Sistemdeki toplam öğrenci sayısını ve eklenebilecek maksimum öğrenci sayısını gösterir. - 
+ **Menü Tabanlı Arayüz**: Kullanıcı, yapmak istediği işlemi kolayca seçebilir. - 
+ **Statik Dizi Kullanımı**: Öğrenci verileri, 50 öğrenci kapasiteli statik bir dizi içinde saklanır.  
+ 
+ 
+
+ ## Kullanım  
+ 
+ ### Derleme  Projeyi derlemek için bir C derleyicisine (örneğin GCC) ihtiyacınız vardır. Aşağıdaki komutu kullanarak derleme yapabilirsiniz:  ```bash gcc -o ogrenci_yonetimi student-managment.c
