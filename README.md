@@ -1,21 +1,33 @@
-# Student Managment
- 
- 
- # C ile Öğrenci Yönetim Sistemi  Bu basit C programı, temel bir konsol tabanlı öğrenci yönetim sistemi oluşturur. Program, bir `struct` (yapı) kullanarak öğrenci bilgilerini (ad, soyad, okul numarası, CGPA ve ders kimlikleri) saklar. Kullanıcıya bir menü aracılığıyla öğrenci bilgilerini ekleme, silme, güncelleme ve arama gibi çeşitli işlemler yapma imkanı sunar.  
- 
+# C-Structured-Data-Handler
 
- ## Özellikler  - 
- 
- **Öğrenci Ekleme**: Yeni öğrenci detaylarını (isim, okul no, CGPA, ders kimlikleri) sisteme ekler. - 
- **Arama Fonksiyonları**: Öğrencileri okul numarasına, isme veya ders kimliğine göre arayarak detaylarını gösterir. - 
- **Güncelleme Fonksiyonu**: Belirli bir öğrencinin bilgilerini okul numarasına göre günceller. - 
- **Silme Fonksiyonu**: Belirli bir öğrenciyi okul numarasına göre sistemden siler. - 
- **Toplam Öğrenci Sayısı**: Sistemdeki toplam öğrenci sayısını ve eklenebilecek maksimum öğrenci sayısını gösterir. - 
- **Menü Tabanlı Arayüz**: Kullanıcı, yapmak istediği işlemi kolayca seçebilir. - 
- **Statik Dizi Kullanımı**: Öğrenci verileri, 50 öğrenci kapasiteli statik bir dizi içinde saklanır.  
- 
- 
+A robust, console-driven record management engine developed in C. This project demonstrates foundational software engineering principles including structured data modeling, linear searching algorithms, and manual memory index management.
 
- ## Kullanım  
- 
- ### Derleme  Projeyi derlemek için bir C derleyicisine (örneğin GCC) ihtiyacınız vardır. Aşağıdaki komutu kullanarak derleme yapabilirsiniz:  ```bash gcc -o ogrenci_yonetimi student-managment.c
+## 🛠️ Engineering Highlights
+- **Custom Data Structures:** Utilizes `struct` definitions to encapsulate complex student profiles, maintaining high data cohesion.
+- **Record Shifting Logic:** Implements an efficient deletion mechanism by shifting subsequent records in memory to ensure continuous data storage (Array Compression).
+- **Multi-Criteria Querying:** Features multiple search entry points (Roll ID, String-based Name Matching, and Relational Course IDs) using iterative search logic.
+- **State Management:** Tracks global system state (current index vs. maximum capacity) to prevent buffer overflows and ensure safe data entry.
+
+## 🔑 Core Functionalities
+- **Creation (CRUD):** Validates and registers new entities into the static database.
+- **Search Engine:** 
+  - *Roll Number Lookup:* Direct integer comparison.
+  - *String Search:* Case-sensitive string matching via `strcmp`.
+  - *Relational Filter:* Identifies all records associated with a specific course ID.
+- **Update Logic:** Field-specific record modification without compromising the entire data block.
+- **Deletion:** Logical removal of records followed by array compression to maintain memory order.
+
+## 🚀 Technical Specifications
+- **Language:** C (Standard C11/C17)
+- **Data Model:** Array of Structs (Static memory allocation)
+- **Search Complexity:** O(n) for linear scans.
+- **System Logic:** Modular function design for high maintainability and clean code standards.
+
+## 📂 Installation and Usage
+### Prerequisites
+Ensure you have a standard C compiler (GCC, Clang, or MSVC) installed on your system.
+
+### Compilation
+Use the following command to build the optimized binary:
+```bash
+gcc -o record_manager main.c
